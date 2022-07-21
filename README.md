@@ -62,3 +62,9 @@ docker exec --interactive --tty broker kafka-console-consumer --bootstrap-server
 
 ## Produce message to queue:
 Access MQ Console (https://localhost:9443/ibmmq/console/) and create the message to QL_INPUT queue.
+
+# Another commands:
+## Remove connector:
+```
+curl -X DELETE http://localhost:8083/connectors/mq-source 
+```
