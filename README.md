@@ -1,4 +1,4 @@
-# IBM MQ Source Connector
+# Kafka Connect - IBM MQ Source Connector
 The IBM MQ Source Connector is used to read messages from an IBM MQ cluster and write them to a Kafka topic.
 
 Reference: https://github.com/ibm-messaging/kafka-connect-mq-source
