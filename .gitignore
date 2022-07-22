@@ -1,9 +1,8 @@
-### Origin Repository ###
-/kafka-connect-mq-source
+### libs file ###
+/libs/kafka-connect-mq-source
 
 ### plugins file ###
 /plugins/jcustenborder-kafka-connect-transform-xml-0.1.0.20
-/plugins/kafka-connect-mq-source
 
 ### Logs file ###
 /logs

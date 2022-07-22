@@ -48,3 +48,5 @@ services:
         volumes:
           - ./config:/opt/kafka/config
           - ./logs:/opt/kafka/logs
+          - ./plugins:/opt/kafka/plugins
+          - ./xsd:/opt/kafka/xsd

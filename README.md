@@ -9,9 +9,9 @@ Reference: https://github.com/ibm-messaging/kafka-connect-mq-source
 $ git clone https://github.com/augustoximenes/kafka-connect-mq-source
 $ cd kafka-connect-mq-source
 ```
-## Clone IBM git repository into plugins directory:
+## Clone IBM git repository into lib directory:
 ```
-$ cd plugins
+$ cd libs
 $ git clone https://github.com/ibm-messaging/kafka-connect-mq-source.git
 $ cd kafka-connect-mq-source
 ```

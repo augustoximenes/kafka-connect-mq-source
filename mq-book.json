@@ -1,0 +1,25 @@
+{
+    "name": "mq-book",
+    "config":
+    {
+        "connector.class": "com.ibm.eventstreams.connect.mqsource.MQSourceConnector",
+        "tasks.max": "1",
+        "topic": "TP_OUTPUT",
+
+        "key.converter": "org.apache.kafka.connect.storage.StringConverter",
+        "value.converter": "org.apache.kafka.connect.storage.StringConverter",
+
+        "mq.queue.manager": "QM1",
+        "mq.connection.name.list": "mq(1414)",
+        "mq.channel.name": "DEV.ADMIN.SVRCONN",
+        "mq.user.name": "admin",
+        "mq.password": "passw0rd",
+        "mq.queue": "QL_INPUT",
+        "mq.record.builder": "com.ibm.eventstreams.connect.mqsource.builders.DefaultRecordBuilder",
+        "mq.message.body.jms": true,
+
+        "transforms": "xml_value",
+        "transforms.xml_value.type": "com.github.jcustenborder.kafka.connect.transform.xml.FromXml$Value",
+        "transforms.xml_value.schema.path": "file:///opt/kafka/xsd/books.xsd"
+    }
+}
