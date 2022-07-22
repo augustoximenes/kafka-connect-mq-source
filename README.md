@@ -9,6 +9,7 @@ Reference: https://github.com/ibm-messaging/kafka-connect-mq-source
 $ git clone https://github.com/augustoximenes/kafka-connect-mq-source
 $ cd kafka-connect-mq-source
 ```
+
 ## Clone IBM git repository into lib directory:
 ```
 $ cd libs
@@ -23,16 +24,19 @@ $ cd ..
 ```
 Important: After build the connector, return to the parent folder
 
+# Install Transformation XML:
+Download the ZIP file and extract it into plugins directory: https://www.confluent.io/hub/jcustenborder/kafka-connect-transform-xml
+
 # Running in distributed mode
 ## Build image:
 ```
 docker build -t kafkaconnect-with-mq-source:1.3.1 .
 ```
-
 ## Run:
 ```
 docker-compose up -d
 ```
+
 # Configure IBM MQ and Kafka
 ## Create Queue:
 Access MQ Console (https://localhost:9443/ibmmq/console/) and create the queue.
