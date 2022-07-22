@@ -1,5 +1,8 @@
 ### Origin Repository ###
 /kafka-connect-mq-source
 
+### Logs file ###
+/logs
+
 ### Mac ###
 .DS_Store

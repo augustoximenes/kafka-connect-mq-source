@@ -16,6 +16,7 @@
         "mq.password": "passw0rd",
         "mq.queue": "QL_INPUT",
         "mq.record.builder": "com.ibm.eventstreams.connect.mqsource.builders.DefaultRecordBuilder",
-        "mq.message.body.jms": true
+        "mq.message.body.jms": true,
+        "mq.record.builder.key.header": "JMSCorrelationID"
     }
 }

@@ -57,7 +57,7 @@ curl -X POST -H "Content-Type: application/json" http://localhost:8083/connector
 # Go to the test:
 ## Consume the messages from topic:
 ```
-docker exec --interactive --tty broker kafka-console-consumer --bootstrap-server broker:9092 --topic TP_OUTPUT --from-beginning
+docker exec --interactive --tty broker kafka-console-consumer --bootstrap-server broker:9092 --topic TP_OUTPUT --from-beginning --property parse.key=true --property key.separator=":"
 ```
 
 ## Produce message to queue:
