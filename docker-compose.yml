@@ -47,3 +47,4 @@ services:
           - 8888:8888
         volumes:
           - ./config:/opt/kafka/config
+          - ./logs:/opt/kafka/logs
