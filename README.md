@@ -9,16 +9,19 @@ Reference: https://github.com/ibm-messaging/kafka-connect-mq-source
 $ git clone https://github.com/augustoximenes/kafka-connect-mq-source
 $ cd kafka-connect-mq-source
 ```
-## Clone IBM git repository into this:
+## Clone IBM git repository into plugins directory:
 ```
+$ cd plugins
 $ git clone https://github.com/ibm-messaging/kafka-connect-mq-source.git
 $ cd kafka-connect-mq-source
 ```
 
 ## Build the connector using Maven:
 ```
-mvn clean package
+$ mvn clean package
+$ cd ..
 ```
+Important: After build the connector, return to the parent folder
 
 # Running in distributed mode
 ## Build image:
@@ -27,10 +30,8 @@ docker build -t kafkaconnect-with-mq-source:1.3.1 .
 ```
 
 ## Run:
-Go back to the parent folder (kafka-connect-mq-source) and up the containers:
 ```
-$ cd ..
-$ docker-compose up -d
+docker-compose up -d
 ```
 # Configure IBM MQ and Kafka
 ## Create Queue:
