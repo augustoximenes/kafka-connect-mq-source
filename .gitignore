@@ -2,7 +2,7 @@
 /kafka-connect-mq-source
 
 ### Logs file ###
-/logs
+/logs/*.log
 
 ### Mac ###
 .DS_Store
